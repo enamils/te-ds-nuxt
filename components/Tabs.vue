@@ -31,12 +31,13 @@
 
     console.log("ID générer ->", tabsWithIds.find(i => i.id));
 
+    // Gestion de l'onglet séléctionné
     const activeTab = ref(0);
-
     const setActiveTab = (index) => {
         activeTab.value = index;
     };
 
+    // Gestion des styles du tabs
     const getClassForStyle = (style) => {
         switch (style) {
             case 'style1':
