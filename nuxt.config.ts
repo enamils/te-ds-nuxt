@@ -35,6 +35,17 @@ export default defineNuxtConfig({
       }
     }
   },
-
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          api: 'modern-compiler' // or "modern"
+        }
+      }
+    }
+  },
+  alias: {
+    assets: "/<rootDir>/assets"
+  },
   compatibilityDate: '2024-07-11'
 })

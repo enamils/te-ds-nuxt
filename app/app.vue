@@ -25,7 +25,27 @@
 
   <UMain>
     <ULandingSection>
-      <TabsUI />
+      <TabsUIExtend
+        :ui="{
+          list: {
+            background: 'bg-[#F2F5F6]',
+            marker: { background: 'bg-[#285AFF]' },
+            tab: { active: 'text-white', font: 'font-bold' }
+          }
+        }"
+        class-container="md:w-6/12"
+      />
+
+      <TabsUIExtend
+        :ui="{
+          list: {
+            background: 'bg-[#F2F5F6]',
+            marker: { background: 'bg-[#E9F2FF]' },
+            tab: { active: 'text-[#285AFF]', font: 'font-bold' }
+          }
+        }"
+        class-container="md:w-6/12"
+      />
     </ULandingSection>
   </UMain>
 
