@@ -27,13 +27,13 @@
           <Tabs :tabs="dataTabs" selectedStyle="style1" />
           <Tabs :tabs="dataTabsStyle2" selectedStyle="style2" />
         </div>
-      </div>
-      <div class="flex flex-col basis-1/2">
-        <Tabs
-          :tabs="dataTabsStyle3"
-          selectedStyle="style3"
-          classContainer="mt-16"
-          classContent="p-32 couleur-fond--5 var--tabs4-tabs-content-radius" />
+        <div class="flex flex-col basis-1/2">
+          <Tabs
+            :tabs="dataTabsStyle3"
+            selectedStyle="style3"
+            classContainer="mt-16"
+            classContent="p-32 couleur-fond--5 var--tabs4-tabs-content-radius" />
+        </div>
       </div>
     </div>
   </NuxtLayout>

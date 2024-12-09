@@ -23,10 +23,11 @@
         return 'tab-' + Math.random().toString(36).substring(2, 9);
     };
 
+    // Création d'un ID unique aléatoire
     const componentId = generateRandomId();
     const tabsWithIds = props.tabs.map((tab, index) => ({
         ...tab,
-        id: `${componentId}-${index}`, // Utiliser l'ID du composant et l'index pour créer un ID unique
+        id: `${componentId}-${index}`,
     }));
 
     console.log("ID générer ->", tabsWithIds.find(i => i.id));
